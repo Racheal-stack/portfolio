@@ -15,21 +15,24 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Racheal Joseph | Senior Full Stack Developer",
   description:
-    "Senior Full Stack Developer with 7 years of experience building scalable backend systems and full-stack applications with Node.js, React, and cloud-ready technologies.",
+    "Senior Full Stack Developer with 7+ years building Node.js APIs, Next.js apps, Strapi CMS integrations, Cloudflare edge services, and reader engagement platforms.",
   keywords: [
     "Full Stack Developer",
-    "Software Engineer",
     "Node.js",
-    "React",
-    "NestJS",
     "TypeScript",
+    "Next.js",
+    "Strapi",
+    "Cloudflare Workers",
+    "NextAuth.js",
+    "RESTful APIs",
+    "TanStack Query",
     "Racheal Joseph",
   ],
   authors: [{ name: "Racheal Joseph" }],
   openGraph: {
     title: "Racheal Joseph | Senior Full Stack Developer",
     description:
-      "7 years building scalable backend systems and full-stack applications.",
+      "Full stack engineer — APIs, auth, CMS integrations, and engagement features at scale.",
     type: "website",
   },
 };

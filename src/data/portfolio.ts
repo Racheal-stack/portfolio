@@ -4,49 +4,68 @@ export const personalInfo = {
   lastName: "Joseph",
   initials: "Racheal J.",
   title: "Senior Full Stack Developer",
+  tagline:
+    "Full stack engineer building scalable APIs, Next.js frontends, and content-driven platforms — from auth and engagement to edge-ready delivery.",
   email: "rachealjoseph902@gmail.com",
   phone: "09032405968",
   location: "Lagos, Nigeria",
+  linkedin: "https://www.linkedin.com/in/racheal-joseph-9b6450297",
+  github: "https://github.com/racheal-stack",
   profile:
-    "Software Engineer with 7 years of experience building scalable backend systems and full-stack applications using Node.js, React.js, and modern cloud-ready technologies. Strong background in designing distributed systems, developing RESTful and event-driven APIs, optimizing server performance, and working with databases such as MongoDB, MySQL, and PostgreSQL.",
+    "Senior Full Stack Developer with 7+ years building end-to-end products using Node.js, TypeScript, React, and Next.js. Strong across RESTful API design, OAuth 2.0 / JWT authentication, headless CMS integrations, and reader engagement features — comments, likes, bookmarks, and user preferences.",
   profileExtended:
-    "Experienced with microservices, concurrency, system design, Docker containers, CI/CD pipelines, caching, and architectural patterns such as DDD, TDD, and Clean Architecture. Known for end-to-end ownership, engineering leadership, and delivering reliable, high-performance solutions in fast-paced environments.",
+    "Experienced with serverless and edge-style architectures (Cloudflare Workers, R2, KV, D1 patterns), Redis and HTTP caching strategies, API middleware for rate limiting and security headers, and OpenAPI-documented endpoints. Comfortable owning features from database to UI — collaborating on TanStack Query data contracts, NextAuth-style multi-provider auth, webhook-driven CMS workflows, and production reliability with Docker, CI/CD, and monitoring.",
 };
 
 export const stats = [
-  { value: "7+", label: "Years experience" },
-  { value: "5", label: "Companies worked" },
-  { value: "99%", label: "Client satisfaction" },
+  { value: "7+", label: "Years full stack experience" },
+  { value: "Full", label: "Stack ownership" },
+  { value: "API", label: "First architecture" },
+];
+
+export const coreCompetencies = [
+  "Node.js & TypeScript",
+  "Next.js App Router & API routes",
+  "RESTful APIs at scale",
+  "NextAuth.js / OAuth 2.0 / JWT",
+  "Strapi & headless CMS integrations",
+  "Cloudflare Workers, R2, KV & D1",
+  "TanStack Query data fetching",
+  "Redis, ETag & edge caching",
+  "Reader engagement features",
+  "Webhooks & event-driven workflows",
+  "OpenAPI / Swagger documentation",
+  "PostgreSQL, MongoDB & MySQL",
 ];
 
 export const featureCards = [
   {
-    title: "Backend Systems",
+    title: "Backend & Content APIs",
     description:
-      "Scalable Node.js services, RESTful APIs, microservices, and event-driven architecture with Redis caching.",
+      "RESTful APIs on Node.js/NestJS, Strapi-style headless CMS integrations, content fetching and transformation pipelines, webhooks, and OpenAPI-documented contracts for high read throughput.",
     icon: "server",
   },
   {
-    title: "Full Stack Apps",
+    title: "Frontend & Auth",
     description:
-      "End-to-end product development with React, Next.js, TypeScript, and real-time WebSocket integrations.",
+      "Next.js and React with TypeScript, NextAuth-compatible OAuth flows (Google, credentials), TanStack Query patterns, and engagement UIs for comments, likes, bookmarks, and preferences.",
     icon: "layers",
   },
   {
-    title: "DevOps & Cloud",
+    title: "Edge, Caching & DevOps",
     description:
-      "Docker containerization, CI/CD pipelines, monitoring with Prometheus/Grafana, and production deployments.",
+      "Cloudflare Workers/R2/KV/D1-style storage, Redis caching, rate-limiting middleware, Docker deployments, CI/CD, and Prometheus/Grafana monitoring for reliable production systems.",
     icon: "cloud",
   },
 ];
 
 export const skillProgress = [
-  { name: "Node.js / NestJS", level: 95 },
-  { name: "React / Next.js", level: 90 },
-  { name: "TypeScript", level: 92 },
-  { name: "System Design", level: 88 },
-  { name: "PostgreSQL / MongoDB", level: 85 },
-  { name: "Docker / CI/CD", level: 82 },
+  { name: "Node.js / TypeScript", level: 95 },
+  { name: "React / Next.js", level: 92 },
+  { name: "RESTful APIs & OpenAPI", level: 94 },
+  { name: "OAuth 2.0 / JWT / NextAuth", level: 90 },
+  { name: "Caching & Rate Limiting", level: 88 },
+  { name: "PostgreSQL / Redis / KV stores", level: 86 },
 ];
 
 export const experience = [
@@ -56,12 +75,12 @@ export const experience = [
     period: "Mar 2026 – Present",
     location: "Lagos, Nigeria",
     highlights: [
-      "Designed and developed Node.js backend services with scalable business logic and secure API endpoints.",
-      "Architected and optimized core backend modules to improve response time, throughput, and system reliability.",
-      "Implemented microservices patterns with service communication, error propagation, and graceful failure handling.",
-      "Used Redis caching and MongoDB/MySQL to improve data access speed and reduce server load.",
-      "Led code reviews and mentored teammates on DDD principles and clean architectural design.",
-      "Owned services end-to-end — from requirements through design, implementation, deployment, and monitoring.",
+      "Design and maintain Node.js RESTful APIs powering core business logic, content-serving endpoints, and secure integrations.",
+      "Architect Redis and MongoDB/MySQL caching layers with HTTP-friendly response patterns to minimize latency under growing traffic.",
+      "Build API middleware for input validation, rate limiting, structured errors, and consistent endpoint contracts.",
+      "Implement microservices communication with graceful failure handling, observability, and production incident response.",
+      "Collaborate with frontend engineers on API shapes optimized for efficient client-side data fetching.",
+      "Own services end-to-end — requirements, design, implementation, deployment, and monitoring.",
     ],
   },
   {
@@ -70,12 +89,13 @@ export const experience = [
     period: "Sep 2024 – Feb 2026",
     location: "UK",
     highlights: [
-      "Architected scalable RESTful API using NestJS, TypeScript, and PostgreSQL with TypeORM for multi-channel fraud scanning.",
-      "Integrated OpenAI, Google Safe Browsing, and Truecaller APIs for AI-powered threat analysis and risk scoring.",
-      "Implemented JWT authentication with RS256 key rotation, bcrypt hashing, email verification, and Google OAuth2.",
-      "Built real-time notifications via WebSockets, Firebase Cloud Messaging, and Twilio SMS with user preferences.",
-      "Developed community features including scam reporting, user stories, and fraud awareness quizzes.",
-      "Containerized with Docker, integrated Redis for rate limiting, and Prometheus/Grafana for monitoring.",
+      "Built scalable RESTful APIs with NestJS, TypeScript, and PostgreSQL for multi-channel content scanning (URLs, SMS, emails, documents).",
+      "Implemented multi-provider authentication with JWT (RS256 rotation), bcrypt credentials, email verification, and Google OAuth 2.0 — aligned with NextAuth.js patterns.",
+      "Shipped reader engagement features: scam reporting, user stories, quizzes, likes, comments, bookmarks, and user preference management.",
+      "Integrated third-party content APIs (OpenAI, Google Safe Browsing, Truecaller) with fetching, filtering, and transformation pipelines.",
+      "Added Redis rate-limiting middleware, input validation, error handling, and security-conscious API design.",
+      "Documented all endpoints with Swagger/OpenAPI; deployed with Docker and monitored via Prometheus/Grafana.",
+      "Delivered real-time notifications via WebSockets, Firebase Cloud Messaging, and Twilio SMS.",
     ],
   },
   {
@@ -84,12 +104,12 @@ export const experience = [
     period: "Apr 2023 – Jun 2025",
     location: "US",
     highlights: [
-      "Architected multi-tenant CRM supporting WebSocket messaging, AWS SES email, SMS, and WebRTC voice.",
-      "Built workflow automation engine with rule-based triggers, conditional logic, and automated actions.",
-      "Implemented bump automation for intelligent follow-up sequencing with adaptive scheduling.",
-      "Integrated Paystack billing for subscription tiers, trial management, and usage-based metering.",
-      "Built analytics dashboard with GA4 integration for funnel metrics and engagement insights.",
-      "Created chatbot builder with visual flow editor and AI-assisted suggestions.",
+      "Architected multi-tenant full stack platform with WebSocket messaging, AWS SES email, SMS, and WebRTC voice channels.",
+      "Built event-driven workflow engine with webhook triggers, conditional logic, and scheduled publishing-style automation.",
+      "Integrated Paystack billing for subscriptions, trials, and usage-based metering across frontend and backend.",
+      "Partnered with frontend team on API contracts and dashboard data fetching to reduce over-fetching and improve UX.",
+      "Implemented analytics with GA4 for funnel metrics, engagement insights, and conversion tracking.",
+      "Created chatbot builder with visual flow editor and AI-assisted content suggestions.",
     ],
   },
   {
@@ -98,11 +118,11 @@ export const experience = [
     period: "Jun 2022 – Apr 2024",
     location: "Saudi Arabia",
     highlights: [
-      "Developed responsive UIs using React.js, TypeScript, and Next.js with efficient state management.",
-      "Collaborated with backend teams to design scalable API interactions and improve user experience.",
-      "Optimized performance through lazy loading, code splitting, and caching strategies.",
-      "Implemented authentication flows and dashboard features for health and wellness management.",
-      "Improved accessibility, responsiveness, and maintainability across the platform.",
+      "Developed responsive Next.js and React applications with TypeScript and efficient state management.",
+      "Integrated backend APIs with cache-aware data fetching, auth flows, and dashboard features.",
+      "Collaborated with backend engineers to define scalable API contracts and TanStack Query-friendly response shapes.",
+      "Optimized performance via lazy loading, code splitting, and client-side caching strategies.",
+      "Improved accessibility and maintainability across a high-traffic health and wellness platform.",
     ],
   },
   {
@@ -111,10 +131,9 @@ export const experience = [
     period: "Jun 2020 – Mar 2023",
     location: "US",
     highlights: [
-      "Built modular component libraries with React, TypeScript, and Node.js, reducing feature development time by ~25%.",
-      "Developed scalable full-stack features with responsive UI and backend API integrations.",
-      "Improved platform UX through optimized state management, API handling, and navigation refinements.",
-      "Contributed to performance optimizations including bundle-size reduction and efficient data fetching.",
+      "Built modular React/TypeScript component libraries and Node.js RESTful APIs, cutting new feature delivery time by ~25%.",
+      "Delivered full stack features with responsive UI, backend integrations, and consistent validation across layers.",
+      "Contributed to API endpoint design, error handling, and response optimization for faster frontend rendering.",
       "Participated in Agile delivery with sprint planning, code reviews, and cross-functional collaboration.",
     ],
   },
@@ -137,50 +156,53 @@ export const education = [
 
 export const skillCategories = [
   {
-    title: "Backend Engineering",
+    title: "Languages & Frameworks",
     skills: [
       "Node.js",
-      "Express.js",
+      "TypeScript",
       "NestJS",
-      "RESTful APIs",
-      "JWT & OAuth2",
-      "Microservices",
-      "MongoDB",
-      "PostgreSQL",
-      "Redis",
-    ],
-  },
-  {
-    title: "Frontend & Full Stack",
-    skills: [
+      "Express.js",
       "React.js",
       "Next.js",
-      "TypeScript",
-      "WebSockets",
-      "State Management",
-      "Responsive Design",
+      "App Router",
     ],
   },
   {
-    title: "Architecture & Practices",
+    title: "APIs, CMS & Auth",
     skills: [
-      "System Design",
-      "DDD",
-      "TDD",
-      "Clean Architecture",
-      "SOLID",
-      "Concurrency",
+      "RESTful APIs",
+      "Strapi",
+      "Headless CMS",
+      "NextAuth.js",
+      "OAuth 2.0",
+      "JWT (RS256)",
+      "OpenAPI / Swagger",
+      "Webhooks",
     ],
   },
   {
-    title: "DevOps & Tools",
+    title: "Cloudflare & Serverless",
     skills: [
+      "Cloudflare Workers",
+      "Cloudflare R2",
+      "Cloudflare KV",
+      "Cloudflare D1",
+      "Edge Computing",
+      "AWS Lambda",
+      "Cloudflare Pages",
+    ],
+  },
+  {
+    title: "Data, Caching & Frontend",
+    skills: [
+      "PostgreSQL",
+      "MongoDB",
+      "MySQL",
+      "Redis",
+      "ETag / HTTP Caching",
+      "TanStack Query",
       "Docker",
       "CI/CD",
-      "GitHub Actions",
-      "Prometheus",
-      "Grafana",
-      "Swagger",
     ],
   },
 ];
@@ -196,4 +218,5 @@ export const navLinks = [
 export const headerLinks = [
   { href: "#", label: "Home" },
   { href: "#experience", label: "Experience" },
+  { href: "/resume", label: "Resume" },
 ];

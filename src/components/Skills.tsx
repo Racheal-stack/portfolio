@@ -5,8 +5,8 @@ export default function Skills() {
     <section id="skills" className="scroll-mt-28 pt-20">
       <h2 className="text-3xl font-bold text-white sm:text-4xl">Skills</h2>
       <p className="mt-4 max-w-xl text-sm text-slate-400">
-        From distributed backend systems to polished frontends and production
-        DevOps.
+        Full stack toolkit spanning Node.js backends, Next.js frontends, headless
+        CMS integrations, Cloudflare edge services, and production DevOps.
       </p>
 
       <div className="mt-10 grid gap-4 sm:grid-cols-2">

@@ -1,4 +1,5 @@
 import {
+  coreCompetencies,
   featureCards,
   personalInfo,
   skillProgress,
@@ -32,8 +33,8 @@ export default function About() {
       <h2 className="text-3xl font-bold text-white sm:text-4xl">About Me</h2>
 
       <p className="mt-6 text-lg text-slate-300">
-        I&apos;m {personalInfo.name}, a software{" "}
-        <span className="font-mono gradient-text">{"{engineer}"}</span>
+        I&apos;m {personalInfo.name}, a senior full stack{" "}
+        <span className="font-mono gradient-text">{"{developer}"}</span>
       </p>
 
       <p className="mt-4 text-sm leading-relaxed text-slate-400 sm:text-base">
@@ -42,6 +43,22 @@ export default function About() {
       <p className="mt-4 text-sm leading-relaxed text-slate-400 sm:text-base">
         {personalInfo.profileExtended}
       </p>
+
+      <div className="mt-8">
+        <p className="mb-3 text-xs font-medium uppercase tracking-widest text-slate-500">
+          Core stack
+        </p>
+        <ul className="flex flex-wrap gap-2">
+          {coreCompetencies.map((item) => (
+            <li
+              key={item}
+              className="rounded-full border border-[#6ea8fe]/20 bg-[#6ea8fe]/5 px-3 py-1 text-xs text-slate-300"
+            >
+              {item}
+            </li>
+          ))}
+        </ul>
+      </div>
 
       <div className="mt-10 grid gap-4 sm:grid-cols-3">
         {stats.map((stat) => (

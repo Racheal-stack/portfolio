@@ -19,12 +19,16 @@ export default function Hero() {
         </p>
 
         <h1 className="max-w-4xl font-mono text-4xl font-bold leading-[1.15] tracking-tight text-white sm:text-5xl lg:text-[3.5rem]">
-          Innovative Software Solutions to Build Scalable{" "}
-          <span className="gradient-text">{"{Systems}"}</span>
+          Full Stack Solutions for Content, Auth &{" "}
+          <span className="gradient-text">{"{Engagement}"}</span>
         </h1>
 
-        <p className="mt-8 max-w-xl text-sm leading-relaxed text-slate-400 sm:text-base">
-          {personalInfo.profile}
+        <p className="mt-4 text-sm font-medium text-[#6ea8fe] sm:text-base">
+          {personalInfo.title}
+        </p>
+
+        <p className="mt-6 max-w-xl text-sm leading-relaxed text-slate-400 sm:text-base">
+          {personalInfo.tagline}
         </p>
 
         <div className="mt-10 flex flex-wrap gap-4">
@@ -35,10 +39,10 @@ export default function Hero() {
             About me
           </a>
           <a
-            href="#contact"
+            href="/resume"
             className="inline-flex items-center gap-2 rounded-full border border-white/20 px-7 py-3 text-sm font-medium text-white transition hover:border-[#6ea8fe]/50 hover:text-[#6ea8fe]"
           >
-            Let&apos;s talk
+            View resume
             <span aria-hidden>→</span>
           </a>
         </div>
