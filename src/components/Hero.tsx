@@ -1,69 +1,46 @@
 import { personalInfo } from "@/data/portfolio";
+import DotGrid from "./DotGrid";
 
 export default function Hero() {
   return (
-    <section className="relative flex min-h-screen items-center overflow-hidden px-6 pt-24">
-      <div className="pointer-events-none absolute inset-0">
-        <div className="absolute -left-32 top-20 h-96 w-96 rounded-full bg-emerald-500/10 blur-3xl" />
-        <div className="absolute -right-32 bottom-20 h-96 w-96 rounded-full bg-cyan-500/10 blur-3xl" />
-        <div
-          className="absolute inset-0 opacity-[0.03]"
-          style={{
-            backgroundImage:
-              "linear-gradient(rgba(255,255,255,.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.1) 1px, transparent 1px)",
-            backgroundSize: "64px 64px",
-          }}
-        />
+    <section className="relative flex min-h-screen items-center overflow-hidden px-6 pt-28 lg:px-12">
+      <div className="pointer-events-none absolute inset-0 overflow-hidden">
+        <div className="glow-orb -left-20 top-0 h-[500px] w-[500px] bg-indigo-600/20" />
+        <div className="glow-orb -right-20 bottom-0 h-[600px] w-[600px] bg-purple-700/15" />
+        <div className="glow-orb left-1/2 top-1/2 h-[400px] w-[400px] -translate-x-1/2 -translate-y-1/2 bg-blue-500/10" />
       </div>
 
-      <div className="relative mx-auto max-w-6xl">
-        <p className="mb-4 font-mono text-sm text-emerald-400">
-          Hi, I&apos;m{" "}
-          <span className="inline-block animate-pulse">▋</span>
+      <DotGrid className="pointer-events-none absolute bottom-32 left-8 opacity-60 lg:left-16" />
+      <DotGrid className="pointer-events-none absolute right-24 top-40 hidden opacity-40 md:grid" rows={4} cols={4} />
+
+      <div className="relative mx-auto w-full max-w-7xl">
+        <p className="mb-6 text-base text-slate-400">
+          Hi, I&apos;m {personalInfo.name}!
         </p>
 
-        <h1 className="max-w-4xl text-5xl font-bold leading-tight tracking-tight text-white sm:text-6xl lg:text-7xl">
-          {personalInfo.name}
+        <h1 className="max-w-4xl font-mono text-4xl font-bold leading-[1.15] tracking-tight text-white sm:text-5xl lg:text-[3.5rem]">
+          Innovative Software Solutions to Build Scalable{" "}
+          <span className="gradient-text">{"{Systems}"}</span>
         </h1>
 
-        <h2 className="mt-4 text-2xl font-medium text-slate-400 sm:text-3xl">
-          {personalInfo.title}
-        </h2>
-
-        <p className="mt-6 max-w-2xl text-lg leading-relaxed text-slate-400">
-          7 years building scalable backend systems and full-stack applications
-          with Node.js, React, and cloud-ready technologies.
+        <p className="mt-8 max-w-xl text-sm leading-relaxed text-slate-400 sm:text-base">
+          {personalInfo.profile}
         </p>
 
         <div className="mt-10 flex flex-wrap gap-4">
           <a
-            href="#experience"
-            className="rounded-full bg-emerald-500 px-6 py-3 text-sm font-semibold text-slate-950 transition hover:bg-emerald-400"
+            href="#about"
+            className="rounded-full bg-[#6ea8fe] px-7 py-3 text-sm font-medium text-[#080c14] transition hover:bg-[#8bb8ff]"
           >
-            View my work
+            About me
           </a>
           <a
-            href={`mailto:${personalInfo.email}`}
-            className="rounded-full border border-white/20 px-6 py-3 text-sm font-semibold text-white transition hover:border-emerald-500/50 hover:text-emerald-400"
+            href="#contact"
+            className="inline-flex items-center gap-2 rounded-full border border-white/20 px-7 py-3 text-sm font-medium text-white transition hover:border-[#6ea8fe]/50 hover:text-[#6ea8fe]"
           >
-            Contact me
+            Let&apos;s talk
+            <span aria-hidden>→</span>
           </a>
-        </div>
-
-        <div className="mt-16 flex flex-wrap gap-6 text-sm text-slate-500">
-          <span className="flex items-center gap-2">
-            <svg className="h-4 w-4 text-emerald-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-            </svg>
-            {personalInfo.location}
-          </span>
-          <span className="flex items-center gap-2">
-            <svg className="h-4 w-4 text-emerald-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-            </svg>
-            {personalInfo.email}
-          </span>
         </div>
       </div>
     </section>

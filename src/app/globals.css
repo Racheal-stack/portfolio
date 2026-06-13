@@ -1,13 +1,18 @@
 @import "tailwindcss";
 
 :root {
-  --background: #020617;
-  --foreground: #cbd5e1;
+  --background: #080c14;
+  --foreground: #94a3b8;
+  --accent: #6ea8fe;
+  --accent-glow: rgba(110, 168, 254, 0.15);
+  --surface: rgba(255, 255, 255, 0.04);
+  --border: rgba(255, 255, 255, 0.08);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-accent: var(--accent);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
@@ -23,6 +28,20 @@ body {
 }
 
 ::selection {
-  background-color: rgb(16 185 129 / 0.3);
+  background-color: rgba(110, 168, 254, 0.3);
   color: white;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #6ea8fe 0%, #a78bfa 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.glow-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(120px);
+  pointer-events: none;
 }

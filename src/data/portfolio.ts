@@ -1,12 +1,53 @@
 export const personalInfo = {
   name: "Racheal Joseph",
+  firstName: "Racheal",
+  lastName: "Joseph",
+  initials: "Racheal J.",
   title: "Senior Full Stack Developer",
   email: "rachealjoseph902@gmail.com",
   phone: "09032405968",
   location: "Lagos, Nigeria",
   profile:
-    "Software Engineer with 7 years of experience building scalable backend systems and full-stack applications using Node.js, React.js, and modern cloud-ready technologies. Strong background in designing distributed systems, developing RESTful and event-driven APIs, optimizing server performance, and working with databases such as MongoDB, MySQL, and PostgreSQL. Experienced with microservices, concurrency, system design, Docker containers, CI/CD pipelines, caching, and architectural patterns such as DDD, TDD, and Clean Architecture. Known for end-to-end ownership, engineering leadership, and delivering reliable, high-performance solutions in fast-paced environments.",
+    "Software Engineer with 7 years of experience building scalable backend systems and full-stack applications using Node.js, React.js, and modern cloud-ready technologies. Strong background in designing distributed systems, developing RESTful and event-driven APIs, optimizing server performance, and working with databases such as MongoDB, MySQL, and PostgreSQL.",
+  profileExtended:
+    "Experienced with microservices, concurrency, system design, Docker containers, CI/CD pipelines, caching, and architectural patterns such as DDD, TDD, and Clean Architecture. Known for end-to-end ownership, engineering leadership, and delivering reliable, high-performance solutions in fast-paced environments.",
 };
+
+export const stats = [
+  { value: "7+", label: "Years experience" },
+  { value: "5", label: "Companies worked" },
+  { value: "99%", label: "Client satisfaction" },
+];
+
+export const featureCards = [
+  {
+    title: "Backend Systems",
+    description:
+      "Scalable Node.js services, RESTful APIs, microservices, and event-driven architecture with Redis caching.",
+    icon: "server",
+  },
+  {
+    title: "Full Stack Apps",
+    description:
+      "End-to-end product development with React, Next.js, TypeScript, and real-time WebSocket integrations.",
+    icon: "layers",
+  },
+  {
+    title: "DevOps & Cloud",
+    description:
+      "Docker containerization, CI/CD pipelines, monitoring with Prometheus/Grafana, and production deployments.",
+    icon: "cloud",
+  },
+];
+
+export const skillProgress = [
+  { name: "Node.js / NestJS", level: 95 },
+  { name: "React / Next.js", level: 90 },
+  { name: "TypeScript", level: 92 },
+  { name: "System Design", level: 88 },
+  { name: "PostgreSQL / MongoDB", level: 85 },
+  { name: "Docker / CI/CD", level: 82 },
+];
 
 export const experience = [
   {
@@ -104,9 +145,7 @@ export const skillCategories = [
       "RESTful APIs",
       "JWT & OAuth2",
       "Microservices",
-      "Event-Driven Architecture",
       "MongoDB",
-      "MySQL",
       "PostgreSQL",
       "Redis",
     ],
@@ -118,23 +157,19 @@ export const skillCategories = [
       "Next.js",
       "TypeScript",
       "WebSockets",
-      "Socket.io",
       "State Management",
       "Responsive Design",
-      "Performance Optimization",
     ],
   },
   {
     title: "Architecture & Practices",
     skills: [
       "System Design",
-      "API Design",
-      "Domain-Driven Design",
-      "Test-Driven Development",
+      "DDD",
+      "TDD",
       "Clean Architecture",
-      "SOLID Principles",
+      "SOLID",
       "Concurrency",
-      "Async Patterns",
     ],
   },
   {
@@ -143,19 +178,22 @@ export const skillCategories = [
       "Docker",
       "CI/CD",
       "GitHub Actions",
-      "GitLab CI",
-      "Jenkins",
       "Prometheus",
       "Grafana",
-      "Swagger/OpenAPI",
+      "Swagger",
     ],
   },
 ];
 
 export const navLinks = [
-  { href: "#about", label: "About" },
+  { href: "#about", label: "Overview" },
   { href: "#experience", label: "Experience" },
   { href: "#skills", label: "Skills" },
   { href: "#education", label: "Education" },
   { href: "#contact", label: "Contact" },
+];
+
+export const headerLinks = [
+  { href: "#", label: "Home" },
+  { href: "#experience", label: "Experience" },
 ];
